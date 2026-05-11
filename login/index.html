@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="form sign-up">
-              
+             <form action="#" class="login" id="loginForm">
                 <h2>Create your Account</h2>
                 <label>
                     <span>Name</span>
@@ -56,11 +56,14 @@
                     <input type="password" />
                 </label>
                 <button type="button" class="submit">Sign Up</button>
-                
+                 <div id="alertBox" class="alert" style="display:none;"></div>
+             </form>
             </div>
         </div>
     </div>
 
+<script src="js/login.js"></script>
+                      
     <script>
         document.querySelector('.img__btn').addEventListener('click', function() {
             document.querySelector('.cont').classList.toggle('s--signup');
@@ -69,4 +72,4 @@
     
   </body>
   
-</html>
+  </html>
