@@ -67,4 +67,6 @@ function goLogin() {
     }
 
     alert("Login berhasil!");
+
+    window.location.href = "index.html";
 }
