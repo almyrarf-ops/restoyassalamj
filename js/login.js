@@ -66,7 +66,5 @@ function goLogin() {
         return;
     }
 
-    alert("Login berhasil!");
-
     window.location.href = "index.html";
 }
