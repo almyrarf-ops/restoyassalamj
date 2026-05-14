@@ -37,9 +37,9 @@ function goLogin() {
 
     const password = document.getElementById("loginPassword").value;
 
-    const savedUsername = localStorage.getItem("username");
+    const savedUsername = sessionStorage.getItem("username");
 
-    const savedPassword = localStorage.getItem("password");
+    const savedPassword = sessionStorage.getItem("password");
 
     if (!savedUsername || !savedPassword) {
 
