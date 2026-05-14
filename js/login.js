@@ -20,11 +20,11 @@ function goRegister() {
 
     const password = document.getElementById("registerPassword").value;
 
-    localStorage.setItem("username", username);
+    sessionStorage.setItem("username", username);
 
-    localStorage.setItem("email", email);
+    sessionStorage.setItem("email", email);
 
-    localStorage.setItem("password", password);
+    sessionStorage.setItem("password", password);
 
     alert("Registrasi berhasil!");
 
@@ -61,11 +61,11 @@ function goLogin() {
 
     if (password !== savedPassword) {
 
-        alert("Password salah!");
+    alert("Password salah!");
 
-        return;
-    }
+    return;
+}
 
-    // berhasil login
-    window.location.href = "index.html";
+// berhasil login
+window.location.href = "./index.html";
 }
