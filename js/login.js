@@ -20,11 +20,11 @@ function goRegister() {
 
     const password = document.getElementById("registerPassword").value;
 
-    sessionStorage.setItem("username", username);
+    localStorage.setItem("username", username);
 
-    sessionStorage.setItem("email", email);
+    localStorage.setItem("email", email);
 
-    sessionStorage.setItem("password", password);
+    localStorage.setItem("password", password);
 
     alert("Registrasi berhasil!");
 
@@ -37,9 +37,9 @@ function goLogin() {
 
     const password = document.getElementById("loginPassword").value;
 
-    const savedUsername = sessionStorage.getItem("username");
+    const savedUsername = localStorage.getItem("username");
 
-    const savedPassword = sessionStorage.getItem("password");
+    const savedPassword = localStorage.getItem("password");
 
     if (!savedUsername || !savedPassword) {
 
