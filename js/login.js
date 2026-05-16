@@ -67,5 +67,9 @@ function goLogin() {
 }
 
 // berhasil login
+localStorage.setItem("isLoggedIn", "true");
+
+localStorage.setItem("loggedInUser", username);
+
 window.location.href = "./index.html";
 }
