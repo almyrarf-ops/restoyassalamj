@@ -138,13 +138,12 @@ html {
 }
 
 .tm-btn-primary {
-  background-color: #2D99CC;
-  color: white;
+    background-color: #c8a96b;
 }
 
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
-  background-color: #1b6f96;
+    background-color: #a8894f;
 }
 
 .tm-btn-success {
