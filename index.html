@@ -328,27 +328,30 @@ if (isLoggedIn === "true") {
 
     authMenu.innerHTML = `
 
-	<div class="dropdown-user">
+    <div class="dropdown-user">
 
-    	<button class="dropdown-btn" onclick="toggleDropdown()">
+        <button class="dropdown-btn" onclick="toggleDropdown()">
 
-        	<span class="user-icon">👤</span>
+            <span class="user-icon">👤</span>
 
-        	<span class="user-text">${username}</span>
+            <span class="user-text">${username}</span>
 
-        	<span class="arrow">▼</span>
+            <span class="arrow">▼</span>
 
-    	</button>
+        </button>
 
-	    <div class="dropdown-content" id="dropdownContent">
+        <div class="dropdown-content" id="dropdownContent">
 
-        	<a href="#" onclick="logout()">Logout</a>
+            <a href="#" onclick="logout()">
+                Logout
+            </a>
 
-    	</div>
+        </div>
 
-	</div>
+    </div>
 
-	`;
+    `;
+}
 
 function toggleDropdown() {
 
