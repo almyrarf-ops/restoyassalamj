@@ -330,17 +330,26 @@ if (isLoggedIn === "true") {
 
 	<div class="dropdown-user">
 
-    	<button class="dropdown-btn">
+    	<button class="dropdown-btn" onclick="toggleDropdown()">
 
-        	👤 ${username} ▼
+        	<span class="user-icon">👤</span>
+
+        	<span class="user-text">${username}</span>
+
+        	<span class="arrow">▼</span>
 
     	</button>
 
-    	<div class="dropdown-content">
-
-        	<a href="#">Profile</a>
+    	<div class="dropdown-content" id="dropdownContent">
 
         	<a href="#" onclick="logout()">Logout</a>
+			
+function toggleDropdown() {
+
+    const dropdown = document.getElementById("dropdownContent");
+
+    dropdown.classList.toggle("show");
+}
 
     	</div>
 
