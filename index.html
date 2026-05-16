@@ -340,22 +340,21 @@ if (isLoggedIn === "true") {
 
     	</button>
 
-    	<div class="dropdown-content" id="dropdownContent">
+	    <div class="dropdown-content" id="dropdownContent">
 
         	<a href="#" onclick="logout()">Logout</a>
-			
-function toggleDropdown() {
-
-    const dropdown = document.getElementById("dropdownContent");
-
-    dropdown.classList.toggle("show");
-}
 
     	</div>
 
 	</div>
 
 	`;
+
+function toggleDropdown() {
+
+    const dropdown = document.getElementById("dropdownContent");
+
+    dropdown.classList.toggle("show");
 }
 
 function logout() {
