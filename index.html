@@ -328,13 +328,23 @@ if (isLoggedIn === "true") {
 
     authMenu.innerHTML = `
 
-    <span class="tm-nav-link">
-        Halo, ${username}
-    </span>
+	<div class="dropdown-user">
 
-    <a href="#" class="tm-nav-link" onclick="logout()">
-        Logout
-    </a>
+    	<button class="dropdown-btn">
+
+        	👤 ${username} ▼
+
+    	</button>
+
+    	<div class="dropdown-content">
+
+        	<a href="#">Profile</a>
+
+        	<a href="#" onclick="logout()">Logout</a>
+
+    	</div>
+
+	</div>
 
 	`;
 }
