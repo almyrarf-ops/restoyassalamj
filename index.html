@@ -316,5 +316,38 @@ https://templatemo.com/tm-539-simple-house
 			});
 		});
 	</script>
+	<script>
+
+const authMenu = document.getElementById("authMenu");
+
+const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+const username = localStorage.getItem("loggedInUser");
+
+if (isLoggedIn === "true") {
+
+    authMenu.innerHTML = `
+
+    <span class="tm-nav-link">
+        Halo, ${username}
+    </span>
+
+    <a href="#" class="tm-nav-link" onclick="logout()">
+        Logout
+    </a>
+
+	`;
+}
+
+function logout() {
+
+    localStorage.removeItem("isLoggedIn");
+
+    localStorage.removeItem("loggedInUser");
+
+    window.location.reload();
+}
+
+</script>
 </body>
 </html>
