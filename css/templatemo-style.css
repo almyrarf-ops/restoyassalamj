@@ -138,12 +138,13 @@ html {
 }
 
 .tm-btn-primary {
-    background-color: #c8a96b;
+    background-color: #2F956D;
+    color: white;
 }
 
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
-    background-color: #a8894f;
+    background-color: #1A6692;
 }
 
 .tm-btn-success {
@@ -434,7 +435,7 @@ p, address {
 
 .tm-paging-link.active,
 .tm-paging-link:hover {
-    background-color: #c8a96b;
+    background-color: #2F956D;
     color: white;
 }
 
